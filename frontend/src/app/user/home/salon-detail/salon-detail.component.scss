@@ -1,0 +1,264 @@
+.banner-section {
+  margin-top: 6em;
+  .booking-view {
+    .booking-view-left {
+      display: flex;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #0000001a;
+      border-radius: 4px;
+      opacity: 1;
+      .booking-view-left-img {
+        flex: 1;
+      }
+      .booking-view-left-info {
+        flex: 1.5;
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #f3f5f8;
+            padding: 15px;
+            padding-left: 30px;
+            h4 {
+              text-align: left;
+              letter-spacing: 0;
+              color: #8a8f9c;
+              opacity: 1;
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0;
+              display: inline-block;
+            }
+            span {
+              text-align: left;
+              letter-spacing: 0;
+              color: #8a8f9c;
+              opacity: 1;
+              font-size: 14px;
+              font-weight: 500;
+            }
+            i {
+              color: #8a8f9c;
+              font-size: 18px;
+            }
+            .reviews {
+              cursor: pointer;
+              i {
+                color: #42b72a;
+              }
+              span {
+                color: #42b72a;
+              }
+            }
+          }
+        }
+        .working-days {
+          padding: 30px;
+          h5 {
+            text-align: left;
+            letter-spacing: 0;
+            color: #262626;
+            opacity: 1;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 15px;
+          }
+          ul {
+            li {
+              border-bottom: none;
+              padding: 0;
+              margin-bottom: 10px;
+              .date-sec {
+                display: flex;
+                h5 {
+                  text-align: left;
+                  letter-spacing: 0;
+                  color: #8a8f9c;
+                  opacity: 1;
+                  font-size: 14px;
+                  font-weight: 500;
+                  padding-left: 25px;
+                }
+              }
+              .time-sec {
+                text-align: left;
+                letter-spacing: 0;
+                opacity: 1;
+                font-size: 14px;
+              }
+              .closed-sec {
+                h5 {
+                  color: #c82b5f;
+                }
+                i {
+                  color: #c82b5f;
+                }
+              }
+              .time-sec-closed {
+                color: #c82b5f;
+              }
+            }
+          }
+        }
+      }
+    }
+    .our-services {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #0000001a;
+      border-radius: 4px;
+      opacity: 1;
+      padding: 15px;
+      h5 {
+        text-align: left;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .hair-sec {
+        margin-top: 10px;
+        h6 {
+          text-align: left;
+          letter-spacing: 0;
+          color: #000000;
+          opacity: 1;
+          font-size: 14px;
+          font-weight: 500;
+        }
+        .hair-sec-inner {
+          display: flex;
+          flex-direction: column;
+
+          img {
+            margin-right: 10px;
+          }
+          .hair-services {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            h6 {
+              text-align: left;
+              letter-spacing: 0;
+              color: #000000;
+              margin: 0;
+              opacity: 1;
+              font-size: 14px;
+              margin-bottom: 3px;
+            }
+            .dollar-req {
+              text-align: left;
+              letter-spacing: 0;
+              color: #000000;
+              opacity: 1;
+              font-size: 14px;
+              span {
+                text-align: left;
+                text-decoration: line-through;
+                letter-spacing: 0;
+                color: #c2c2c2;
+                opacity: 1;
+                font-size: 14px;
+                margin-left: 8px;
+              }
+            }
+            .min-req {
+              text-align: left;
+              letter-spacing: 0;
+              color: #9595a1;
+              opacity: 1;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.rating-detail {
+  display: flex;
+}
+.find {
+  cursor: pointer;
+}
+.categoryName {
+  font-size: 12px;
+}
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .main-section {
+    padding: 1em;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-top: 0.5em;
+    .closeTime {
+      text-align: right;
+      position: relative;
+      right: 0;
+      z-index: 99999;
+      margin: 10px;
+    }
+    .reviews {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid lightgray;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      .imgSec {
+        width: 12%;
+      }
+      .commentSec {
+        width: 85%;
+      }
+    }
+  }
+}
+.userName {
+  font-weight: 600;
+}
+.closeImage {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+.img {
+  text-align: right;
+}
+
+#style-3::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: purple;
+}

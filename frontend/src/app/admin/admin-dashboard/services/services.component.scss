@@ -1,0 +1,101 @@
+.servicesWrapper {
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    .actionBtn {
+      padding-right: 10px;
+    }
+  }
+  .addServiceModal {
+    position: fixed; /* Sit on top of the page content */
+    //display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modalContent {
+      background-color: white;
+      border-radius: 10px;
+      opacity: 1;
+      padding: 10px;
+      margin: 10px;
+
+      .headerText {
+        border-bottom: 1px solid lightgray;
+      }
+      .mainSection {
+        .serviceForm {
+          .fields {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            margin-top: 5px;
+            .label {
+              width: 30%;
+              white-space: nowrap;
+              margin-right: 10px;
+            }
+            .selectOption {
+              width: 65%;
+              padding: 10px !important;
+              background: transparent;
+              box-shadow: none;
+              border: 1px solid #ced4da;
+              margin-right: 0;
+            }
+            .pls {
+              width: 65% !important;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.selectOption {
+  margin-left: 15px;
+  width: 60%;
+  padding: 5px;
+  border-radius: 35px;
+}
+
+table {
+  width: 100%;
+}
+
+.status-check {
+  width: 120px;
+}
+.headerText h3 {
+  font-size: 20px;
+  padding-bottom: 0;
+}
+
+.btn-sign-in {
+  min-width: 80px;
+  margin-right: 5px;
+  margin-left: 0;
+}
+.serviceForm {
+  margin-top: 15px;
+}
+
+.buttonArea {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .editBtn {
+    margin-left: 10px;
+  }
+}
+.btnService {
+  width: 100px;
+}

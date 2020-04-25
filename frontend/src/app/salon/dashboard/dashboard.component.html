@@ -1,0 +1,116 @@
+<app-salon-header></app-salon-header>
+<div class="check-spa-outer">
+  <div class="container check-timing-sec">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="check-spa">
+          <div class="edit-info">
+            <a
+              [routerLink]="'edit-salon'"
+              routerLinkActive="router-link-active"
+            >
+              <img src="../../../assets/images/edit.svg"
+            /></a>
+          </div>
+
+          <div class="check-spa-image-outer">
+            <div class="check-spa-image">
+              <img src="{{ salonData?.image }}" class="profileImage" />
+            </div>
+            <h4>
+              {{ salonData?.name }}
+            </h4>
+          </div>
+          <div class="salon-info">
+            <!-- <div class="salon-info-inner">
+                            <img src="../../../assets/images/mail.svg">
+                            <h5>checkers_spa_salon@gmail.com</h5>
+                        </div> -->
+            <div class="salon-info-inner">
+              <img src="../../../assets/images/telephone.svg" />
+              <h5>+{{ salonData?.code }} {{ salonData?.contact }}</h5>
+            </div>
+            <div class="salon-info-inner">
+              <img src="../../../assets/images/address.svg" />
+              <h5>{{ salonData?.salonaddress }}</h5>
+            </div>
+          </div>
+          <!-- <div class="about-salon">
+            <h2>
+              About
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div> -->
+          <div class="about-salon">
+            <h2>
+              <a
+                [routerLink]="'subscription'"
+                routerLinkActive="router-link-active"
+              >
+                Subscription Details
+              </a>
+            </h2>
+            <h2>
+              <a
+                [routerLink]="'promocode'"
+                routerLinkActive="router-link-active"
+              >
+                Manage Promocode
+              </a>
+            </h2>
+            <h2>
+              <a [routerLink]="'connect'" routerLinkActive="router-link-active">
+                Connect Account
+              </a>
+            </h2>
+            <!-- <div class="subscription-box">
+              <div class="subscriptionWrapper">
+                <div class="mainSection">
+                  <div class="field">
+                    Name:
+                    <div class="value">
+                      hfghdfhg {{ subscriptionDetails.planDetails.id }}
+                    </div>
+                  </div>
+                  <div class="field">
+                    Amount:
+                    <div class="value">
+                      {{
+                      1250  subscriptionDetails.planDetails.amount | currency: "USD"
+                      }}
+                    </div>
+                  </div>
+                  <div class="field">
+                    Billed:
+                    <div class="value">
+                      1213132 {{ subscriptionDetails.planDetails.interval }}ly
+                    </div>
+                  </div>
+                  <div class="field">
+                    Subscribed On: 152251
+                    <div class="value">{{ subscriptionDate }}</div>
+                  </div>
+                  <div class="field">
+                    Expiry Date: 116321651
+                    <div class="value">{{ expirationDate }}</div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <app-subscribe></app-subscribe> -->

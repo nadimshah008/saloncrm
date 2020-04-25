@@ -1,0 +1,67 @@
+<div id="dashboardWrapper">
+  <div id="navigationBar">
+    <app-header></app-header>
+  </div>
+  <div id="mainSection">
+    <div
+      class="selectorSection"
+      [ngClass]="isSelectorShown ? 'selectorSection' : 'danger'"
+    >
+      <div class="menus-app" (click)="hideMenu()">
+        <div class="clearfix profile-sm">
+          <div class="float-left font-weight-bold">{{ adminName }}</div>
+          <div class="float-right">
+            <i class="material-icons" (click)="logout()" title="Logout">
+              exit_to_app
+            </i>
+          </div>
+        </div>
+        <a class="selectors" routerLink="dashboard" routerLinkActive="active"
+          >Dashboard</a
+        >
+        <a class="selectors" routerLink="manage-admin" routerLinkActive="active"
+          >Manage Admin</a
+        >
+        <a class="selectors" routerLink="salons" routerLinkActive="active"
+          >Manage Salons</a
+        >
+        <a class="selectors" routerLink="users" routerLinkActive="active">
+          Manage Users</a
+        >
+        <a class="selectors" routerLink="categories" routerLinkActive="active"
+          >Manage Categories</a
+        >
+        <a class="selectors" routerLink="services" routerLinkActive="active"
+          >Manage Services</a
+        >
+        <a class="selectors" routerLink="roles" routerLinkActive="active"
+          >Manage Roles</a
+        >
+        <a class="selectors" routerLink="manage-plan" routerLinkActive="active"
+          >Manage Plans</a
+        >
+        <a
+          class="selectors"
+          routerLink="subscribed-salons"
+          routerLinkActive="active"
+          >Subscribed Salons</a
+        >
+        <a class="selectors" routerLink="detail" routerLinkActive="active"
+          >Admin Details</a
+        >
+        <a class="selectors" routerLink="bookings" routerLinkActive="active"
+          >Bookings</a
+        >
+        <!-- <a class="selectors" routerLink="location" routerLinkActive="active"
+          >Location   subscribed-salons</a
+        > -->
+      </div>
+    </div>
+    <div
+      class="selectedSection"
+      [ngClass]="isSelectorShown ? 'selectedSection' : 'fullShow'"
+    >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
